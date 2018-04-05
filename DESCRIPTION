@@ -1,0 +1,9 @@
+Package: imagevisualizer
+Type: Package
+Title: This lets you visualize matrixes as images
+Version: 0.1.0
+Author: Hector Eduardo Perez
+Maintainer: Hector Eduardo Perez <perez.hector.eduardo@gmail.com>
+Description: 
+License: MIT
+LazyData: TRUE

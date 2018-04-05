@@ -1,0 +1,4 @@
+Name: Image visualizer
+Description: This addin lets R-studio map a set of one or three matrixes to a rgb image 
+Binding: visualize
+Interactive: false
