@@ -1,8 +1,12 @@
+
 visualize = function(){
-  library(tcltk)
-  win2 <- tktoplevel()
-  tktitle(win2) <- "image visualizer"
-  win2$env$butOK <- ttkbutton(win2, text = "OK", width = -6,
-        command = (function(win) { force(win); function() tkdestroy(win)})(win2))
-  tkgrid(win2$env$butOK, padx = 70, pady = 30)
+  library(tcltk2)
+  library(bmp)
+  library(png)
+  y=read.bmp("/home/perez/Tesis/imagenes/I01_17_4.bmp")
+  casa = readPNG('/home/perez/Tesis/imagenes/I01_17_4.png')
+  casabyn = '/home/perez/test.png'
+  window = MainWindow('Image Visualizer')
+  matrixToImagePNG(y)
+  openWindow(window)
 }
